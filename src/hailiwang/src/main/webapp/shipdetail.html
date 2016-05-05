@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>海鲤网</title>
+<link href="ui/plugins/trave/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<link href="ui/plugins/bootstrap-datepicker/css/datepicker.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="ui/plugins/bootstrap-star-rating/css/star-rating.css" media="all" type="text/css"/>
+<link rel="stylesheet" href="ui/plugins/bootstrap-star-rating/css/theme-krajee-fa.css" media="all" type="text/css"/>
+<link rel="stylesheet" href="ui/plugins/bootstrap-star-rating/css/theme-krajee-svg.css" media="all" type="text/css"/>
+<link rel="stylesheet" href="ui/plugins/bootstrap-star-rating/css/theme-krajee-uni.css" media="all" type="text/css"/>
+<!-- jQuery (Bootstrap's JavaScript plugins) -->
+<script src="ui/plugins/trave/js/jquery.min.js"></script>
+<script src="ui/plugins/trave/js/bootstrap.js"></script>
+<script src="ui/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+
+<!-- Custom Theme files -->
+<link href="ui/plugins/trave/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="ui/css/haili.css" rel="stylesheet" type="text/css"/>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Travelo  Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+
+<!--webfont-->
+ <link href="ui/plugins/fontawesome/css/font-awesome.css" rel='stylesheet' type='text/css' /> 
+<!--animated-css-->
+<link href="ui/plugins/trave/css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="ui/plugins/trave/js/wow.min.js"></script>
+    <!--data	-->
+    <link rel="stylesheet" type="text/css" media="all" href="ui/plugins/datarange/css/daterangepicker-bs3.css"/>
+    <script type="text/javascript" src="ui/plugins/datarange/js/moment.js"></script>
+    <script type="text/javascript" src="ui/plugins/datarange/js/daterangepicker.js"></script>
+    <script src="ui/plugins/jquery-pin/jquery.pin.js"></script>
+<script>
+var cxt = "";
+ new WOW().init();
+</script>
+<!--/animated-css-->
+<!--script-->
+
+<!-- 页面跳转 -->
+<script type="text/javascript" src="js/main/shipdetail.js"></script>
+<script src="ui/plugins/bootstrap-star-rating/js/star-rating.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="bg">
+    <!--top-->
+    <header id="header" class="clearfix hidden-xs bgfff">
+        <a class="sblock pull-left" href="index.html">
+            <img class="img-responsive" src="ui/images/logo.png" alt="">
+        </a>
+        <div class="input-group head_input">
+            <span class="glyphicon glyphicon-search" ></span>
+            <input type="text" class="head_search" placeholder="想去哪儿?">
+        </div>
+
+        <ul class="pull-right list-unstyled list-inline">
+            <li><a class="header_rg_list aeee adecoration" href="botaer.html"><span class="sborder_eee">成为船长</span></a></li>
+            <li>
+                <a id="msg_btn" class="header_rg_list aeee adecoration" href="#">
+                    消息<i class="fa fa-comment-o fa-lg"></i>
+                </a>
+                <div class="msg_content bgfff sborder">
+                    <ul class="list-unstyled">
+                        <li class="inform">
+                            <span>通知(0)</span>
+                            <a href="travel.html" class="pull-right aeee">查看您的旅程</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a id="help_btn" class="header_rg_list aeee adecoration" href="#" data-toggle="modal" data-target="#login">帮助
+                    <i class="fa fa-heart-o fa-lg"></i>
+                </a>
+                <div class="help_content bgfff sborder">
+                    <div class="input-group help_sou">
+                        <span class="glyphicon glyphicon-search" ></span>
+                        <input type="text" class="head_search" placeholder="想去哪儿?">
+                    </div>
+                    <ul class="help_list list-unstyled">
+                        <li class="help_title">推荐的文章</li>
+                        <li class="help_article">
+                            <a href="#" class="help_text_content">
+                                <i class="fa fa-file-text-o fa-lg"></i>
+                                入门指南
+                            </a>
+                        </li>
+                        <li class="help_article">
+                            <a href="#" class="help_text_content">
+                                <i class="fa fa-file-text-o fa-lg"></i>
+                                入门指南
+                            </a>
+                        </li>
+                        <li class="help_article">
+                            <a href="#" class="help_text_content">
+                                <i class="fa fa-file-text-o fa-lg"></i>
+                                入门指南
+                            </a>
+                        </li>
+                        <li class="help_article">
+                            <a href="#" class="help_text_content">
+                                <i class="fa fa-file-text-o fa-lg"></i>
+                                入门指南
+                            </a>
+                        </li>
+                        <li class="help_article">
+                            <a href="#" class="help_text_content">
+                                <i class="fa fa-file-text-o fa-lg"></i>
+                                入门指南
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a id="user_btn" type="button" class=" header_rg_list aeee adecoration" href="#" data-toggle="modal"
+                   data-target="#register">
+                    用户 <i class="fa fa-user fa-lg"></i>
+                </a>
+                <div class="user_content bgfff sborder">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="travel.html">您的旅程</a>
+                        </li>
+                        <li>
+                            <a href="user_msg.html">编辑个人资料</a>
+                        </li>
+                        <li>
+                            <a href="WEB-INF/view/main/index.html">退出</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </li>
+        </ul>
+
+
+    </header>
+    <!--banner-->
+    <div class="xx-coverbox">
+           <img class="xx-coverimg" src="upload/ship/coverimg.jpg" />
+    </div>
+
+    <div class="sborder_bottom bgfff clearfix">
+            <div class="container">
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div class="row clearfix">
+                        <div class="col-md-7 col-xs-12">
+                            <div class="row">
+                                <div class="space-top-4 col-sm-4 col-xs-12">
+                                    <img src="upload/ship/original.jpg" class="usrimg scenter">
+                                    <p class="usrname scenter">船长名字</p>
+                                </div>
+                                <div class="space-top-4 col-sm-8 col-xs-12">
+                                    <div class="row">
+                                        <p class="stcenter">大连黄金海岸</p>
+                                        <span class="scenter stcenter">大连 港口</span>
+                                        <div  class="col-xs-4 space-top-2">
+                                            <img src="img/house_num.png" alt="" class="cover_icon scenter">
+                                            <p  class="stcenter">独立房间</p>
+                                        </div>
+                                        <div class="col-xs-4 space-top-2">
+                                            <img src="img/people_num.png" alt="" class="cover_icon scenter">
+                                            <p  class="stcenter">一位船客</p>
+                                        </div>
+                                        <div  class="col-xs-4 space-top-2">
+                                            <img src="img/bed_num.png" alt="" class="cover_icon scenter">
+                                            <p  class="stcenter">一张床</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-left:0;padding-right:0;" class="book_tk pad-bottom-4 col-md-4 col-md-offset-1 col-sm-12 hidden-xs sborder">
+                            <div class="xx-coverprice">
+                                <p class="price">¥888</p>
+                                <p class="pricepre"> 每天</p>
+                            </div>
+                            <div class="col-xs-12 space-bottom-4" style="height:95px;">
+                                <div class="data-open">
+                                    <p>租船与还船日期</p>
+                                    <input id="start_date" class="date-open-input">
+                                    <script type="text/javascript">
+                                        $(document).ready(function () {
+                                            function SetRQ() {
+                                                var MyDate = new Date();
+                                                //获得昨天的日期
+                                                var yesterday_miliseconds = MyDate.getTime() - 1000 * 60 * 60 * 24;
+                                                var Yesterday = new Date();
+                                                Yesterday.setTime(yesterday_miliseconds);
+                                                var yesterday_year = Yesterday.getFullYear().toString();
+                                                var month_temp = Yesterday.getMonth() + 1;
+                                                var yesterday_month = month_temp > 9 ? month_temp.toString() : "0" + month_temp.toString();
+                                                var d = Yesterday.getDate() + 1;
+                                                var Day = d > 9 ? d.toString() : "0" + d.toString();
+
+                                                return yesterday_year + "-" + yesterday_month + "-" + Day;
+                                            }
+
+                                            $('#start_date').daterangepicker({minDate: SetRQ()});
+                                        });
+                                    </script>
+                                </div>
+                                <div class="pepole">
+                                    <p>人数</p>
+                                    <select class="date-open-select sborder">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-12">
+                                <a class=" sblock book_btn">立即预订</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+    <!--内容-->
+    <div class="xx-content pad-bottom-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div class="row">
+                        <div class="space-top-8 col-md-7 col-xs-12">
+                            <div class="row">
+                                <h3>关于此船只</h3>
+                                <p>大连，别称滨城，旧名达里尼、青泥洼。位于辽东半岛南端，地处黄渤海之滨，背依中国东北腹地，与山东半岛隔海相望。。是中国东部沿海重要的经济、贸易、港口、工业、旅游城市。</p>
+                                <a class="ared">联系船长</a>
+                                <div class="sborder_top space-top-4 pad-top-4 clearfix">
+                                    <span class="xx-content-st  col-md-3 col-xs-12">船源</span>
+                                    <ul class=" col-md-4 col-xs-12">
+                                        <li>可住：<span class="xx-mark-dark">4</span></li>
+                                        <li>卫生间：<span class="xx-mark-dark">4</span></li>
+                                        <li>床位：<span class="xx-mark-dark">4</span></li>
+                                        <li>餐桌：<span class="xx-mark-dark">4</span></li>
+                                    </ul>
+                                    <ul class=" col-md-4 col-xs-12">
+                                        <li>提船时间：<span class="xx-mark-dark">14:00</span></li>
+                                        <li>归还时间：<span class="xx-mark-dark">12:00</span></li>
+                                        <li>船源类型：<span class="xx-mark-dark">住宿加早餐</span></li>
+                                        <li><a class="ared">《船只守则》</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sborder_top space-top-4 pad-top-4 clearfix">
+                                    <span class="xx-content-st  col-md-3 col-xs-12">描述</span>
+                                    <span class="col-md-9 col-xs-12">
+                                        1993年，全市耕地面积为28.7万公顷，占土地总面积的22.8%，其中水田3.3万公顷，旱田25.4万公顷。全地区林业用地42.4万公顷（据1985年大连市农业资源区划调查统计），占土地总面积的33.1%，其中有林地34.4万公顷，未成林造林地3万公顷，宜林荒山3.3万公顷。 可利用草地面积26.7万公顷（据1985年大连市农业资源区划调查统计），土壤共有6个土类，地带性土壤为棕壤，约90.7万公顷，占土壤总面积的81.5%；草甸土、水稻土、风沙土、盐土和沼泽土合计占18.5%。有滩涂资源6.6万公顷，占土地总面积的5.2%，其中黄海海岸4.2万公顷，渤海海岸2.4万公顷。
+                                    </span>
+                                </div>
+
+                                <div class="sborder_top space-top-4 pad-top-4 clearfix">
+                                    <span class="xx-content-st  col-md-3 col-xs-12">可租性</span>
+                                    <ul class="col-md-4 col-xs-12">
+                                        <li>最少租船天数<span class="xx-mark-dark">2天</span></li>
+                                    </ul>
+                                    <ul class="col-md-4 col-xs-12">
+                                        <li><a id="viewrl" class="ared">查看日历</a></li>
+                                    </ul>
+                                </div>
+                                <div class="photo-grid"  id="photo-gallery" >
+                                    <div class="row featured-height" >
+                                        <div  class="featuredimg wow fadeInLeft animated"   data-wow-delay="0.5s" >
+                                            <a href="#"  class="photo-grid-photo" style="background-image:url('upload/ship/ship1/img1.jpg');">
+                                            </a>
+                                        </div>
+                                        <div  class="featuredimg wow fadeInRight animated" data-wow-delay="0.5s" >
+                                            <a href="#"  class="photo-grid-photo" style="background-image:url('upload/ship/ship1/img2.jpg');">
+                                            </a>
+                                        </div>                                        
+                                    </div>
+                                    <div class="row supporting-height wow fadeInUp animated" data-wow-delay="0.5s" >
+                                        <div  class="supportingimg">
+                                            <a href="#"  class="photo-grid-photo" style="background-image:url('upload/ship/ship1/img3.jpg');">
+                                            </a>
+                                        </div>	
+                                        <div  class="supportingimg">
+                                            <a href="#"  class="photo-grid-photo" style="background-image:url('upload/ship/ship1/img4.jpg');">
+                                            </a>
+                                        </div>
+                                        <div  class="supportingimg">
+                                            <a href="#"  class="photo-grid-photo" style="background-image:url('upload/ship/ship1/img5.jpg');">
+                                            </a>
+                                        </div>                                                                                                                           	                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--照片-->
+
+    </div>
+    <!--评价-->
+    <div class="xx-pj-box">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div class="row">
+                        <div class="space-top-4 col-xs-7">
+                            <div class="row">
+                             <h4 style="float:left;">97条评论</h4><input class="input-21e" type="number"  data-size="xs"  value="5" style="float:left;" >
+                            </div>
+
+                        </div>
+                        <div class="space-top-4 sborder_top col-xs-8 pad-top-4">
+                            <span class="xx-content-st col-md-2 col-xs-12">概述</span>
+                            <ul class="col-md-5 col-xs-12">
+                                <li class="xx-pj-lih">
+                                    <span class="pull-left star-top">准确性： </span>
+                                    <input class="input-21e" type="number"  data-size="xs"  value="5" >
+                                </li>
+                                <li class="xx-pj-lih">
+                                    <span class="pull-left star-top">沟通性： </span>
+                                    <input class="input-21e" type="number"  data-size="xs"  value="5" >
+                                </li>
+                                <li class="xx-pj-lih">
+                                    <span class="pull-left star-top">清洁度： </span>
+                                    <input class="input-21e" type="number"  data-size="xs"  value="5" >
+                                </li>
+
+
+                            </ul>
+                            <ul class="col-md-5 col-xs-12">
+                                <li class="xx-pj-lih">
+                                    <span class="pull-left star-top">&nbsp;&nbsp;位&nbsp;置：</span>
+                                    <input class="input-21e" type="number"  data-size="xs"  value="5" >
+                                </li>
+                                <li class="xx-pj-lih">
+                                    <span class="pull-left star-top">&nbsp;&nbsp;入&nbsp;住： </span>
+                                    <input class="input-21e" type="number"  data-size="xs"  value="5" >
+                                </li>
+                                <li class="xx-pj-lih">
+                                    <span class="pull-left star-top">性价比： </span>
+                                    <input class="input-21e" type="number"  data-size="xs"  value="5" >
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="sborder_top col-xs-8 pad-top-4">
+                            <div class="row">
+                                <div class="col-sm-3 col-xs-12">
+                                    <img src="upload/ship/original.jpg" class="plimg scenter">
+                                    <p class="plname scenter">xiaoxia</p>
+                                </div>
+                                <div class="col-sm-9 col-xs-12 pad-bottom-4">
+                                    <div class="row clearfix">
+                                        <p class="col-xs-12">非常赞，位置好，很舒适</p>
+                                        <div class="xx-plm-lb">
+                                            <p class="col-xs-8">2016-01-02</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="sborder_top col-xs-8 pad-top-4">
+                            <div class="row">
+                                <div class="col-sm-3 col-xs-12">
+                                    <img src="upload/ship/original.jpg" class="plimg scenter">
+                                    <p class="plname scenter">xiaoxia</p>
+                                </div>
+                                <div class="col-sm-9 col-xs-12 pad-bottom-4">
+                                    <div class="row clearfix">
+                                        <p class="col-xs-12">非常赞，位置好，很舒适</p>
+                                        <div class="xx-plm-lb">
+                                            <p class="col-xs-8">2016-01-02</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!--您的房东-->
+    <div class="pad-top-4 pad-bottom-4">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div class="row">
+                        <h4 class="yourcaption col-xs-12">您的船长</h4>
+                        <hr  class="space-top-2">
+                        <div class="col-sm-3 col-xs-12">
+                            <img src="upload/ship/original.jpg" class="usrimg scenter">
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <h4>xiaoxia</h4>
+                            <p style="color: #82888a;">威海 ·  注册时间: 2012年10月</p>
+                            <p>地道大连人</p>
+                            <p>回复率：<span class="xx-mark-dark">100%</span></p>
+                            <p>回复时间：<span class="xx-mark-dark">1小时内</span></p>
+                            <buuton class="scan_houses">联系船长</buuton>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--相似船源-->
+    <div class="container">
+        <div class="pad-top-4 row">
+            <div class="col-xs-10 col-xs-offset-1" >
+                <h4 class="col-xs-12">相似船源</h4>
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12 wow bounceIn" data-wow-delay="0.5s" >
+                        <img src="upload/ship/ship1/img1.jpg" alt="" class="img-responsive" style="height:200px;">
+                        <div class="xx-cy-name"> ¥2000/天</div>
+                        <h5>天津滨海</h5>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 wow bounceIn" data-wow-delay="0.5s" >
+                        <img src="upload/ship/ship1/img2.jpg" alt="" class="img-responsive" style="height:200px;">
+                        <div class="xx-cy-name"> ¥2000/天</div>
+                        <h5>天津滨海</h5>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 wow bounceIn"  data-wow-delay="0.5s" >
+                        <img src="upload/ship/ship1/img3.jpg" alt="" class="img-responsive" style="height:200px;">
+                        <div class="xx-cy-name"> ¥2000/天</div>
+                        <h5>天津滨海</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+<!--<% include("/main/footer.html"){} %>-->
+    <script>
+        $(document).ready(function() {
+        	 $('.input-21e').rating({
+                 min: 0,
+                 max: 5,
+                 step: 1,
+                 displayOnly:true
+              });
+        	
+        	
+            function SetRQ() {
+                var MyDate = new Date();
+                //获得昨天的日期
+                var yesterday_miliseconds = MyDate.getTime() - 1000 * 60 * 60 * 24;
+                var Yesterday = new Date();
+                Yesterday.setTime(yesterday_miliseconds);
+                var yesterday_year = Yesterday.getFullYear().toString();
+                var month_temp = Yesterday.getMonth() + 1;
+                var yesterday_month = month_temp > 9 ? month_temp.toString() : "0" + month_temp.toString();
+                var d = Yesterday.getDate()+1;
+                var Day = d > 9 ? d.toString() : "0" + d.toString();
+
+                return yesterday_year + "-" + yesterday_month + "-" + Day;
+            }
+            $(".book_tk").pin();
+
+
+        });
+    </script>
+     </body>
+ </html>

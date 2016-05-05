@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>海鲤网</title>
+    <link href="ui/plugins/trave/css/bootstrap.min.css" rel='stylesheet' type='text/css'/>
+    <link href="ui/plugins/bootstrap-datepicker/css/datepicker.css" rel='stylesheet' type='text/css'/>
+    <!-- jQuery (Bootstrap's JavaScript plugins) -->
+    <script src="ui/plugins/trave/js/jquery.min.js"></script>
+    <script src="ui/plugins/trave/js/bootstrap.js"></script>
+    <script src="ui/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+
+    <!-- Custom Theme files -->
+    <link href="ui/plugins/trave/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="ui/css/haili.css" rel="stylesheet" type="text/css"/>
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="Travelo  Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design"/>
+
+    <!--webfont-->
+    <link href="ui/plugins/fontawesome/css/font-awesome.css" rel='stylesheet' type='text/css'/>
+    <!--animated-css-->
+    <link href="ui/plugins/trave/css/animate.css" rel="stylesheet" type="text/css" media="all">
+    <script src="ui/plugins/trave/js/wow.min.js"></script>
+    <!--slider-css-->
+    <link href="ui/plugins/bootstrap-slider/css/bootstrap-slider.css" rel='stylesheet' type='text/css'/>
+    <script type="text/javascript" src="ui/plugins/bootstrap-slider/bootstrap-slider.js"></script>
+
+    <!--data	-->
+    <link rel="stylesheet" type="text/css" media="all" href="ui/plugins/datarange/css/daterangepicker-bs3.css"/>
+    <script type="text/javascript" src="ui/plugins/datarange/js/moment.js"></script>
+    <script type="text/javascript" src="ui/plugins/datarange/js/daterangepicker.js"></script>
+    <script>
+        var cxt = "";
+        new WOW().init();
+    </script>
+    <!--/animated-css-->
+    <!--script-->
+    <script type="text/javascript" src="ui/plugins/trave/js/move-top.js"></script>
+    <script type="text/javascript" src="ui/plugins/trave/js/easing.js"></script>
+    <!-- 页面跳转 -->
+    <script type="text/javascript" src="js/common/ajax.js"></script>
+</head>
+<body>
+    <div id="toolbarDiv"></div>
+    <!---->
+    <div class="banner-bg">
+    <!-- 	<video autoplay="autoplay" muted="muted" poster="wall_icons/my.jpg" width="100%"  loop>
+            <source src="ui/plugins/trave/srix.mp4" type="video/mp4" type="video/mp4">
+            </video> -->
+            <!--轮播-->
+            <div data-interval="3000" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img class="banner_width" src="ui/images/bg/img1.jpg" alt=""/>
+                    </div>
+                    <div class="item">
+                        <img class="banner_width" src="ui/images/bg/img3.jpg" alt=""/>
+                    </div>
+                    <div class="item">
+                        <img class="banner_width" src="ui/images/bg/img4.jpg" alt=""/>
+                    </div>
+                    <div class="item">
+                        <img class="banner_width" src="ui/images/bg/img2.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+            <!--导航栏-->
+            <div class="banner">
+                <div class="header">
+                    <div class="logo wow fadeInLeft" data-wow-delay="0.5s">
+                        <a href="index.html"><img src="ui/images/logo.png" alt="" class="position-logo" /></a>
+                    </div>
+                    <div class="top-menu">
+                        <span class="menu"></span>
+                        <ul class="cl-effect-1">
+                            <li>
+                                <a class="header_rg_list afff adecoration" href="botaer.html">
+                                    <span class="header_boat">成为船主</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="header_rg_list afff adecoration" href="#" data-toggle="modal"
+                                data-target="#login">注册</a>
+                                <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <h4 class="modal-title" id="login_title">注册</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="post">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="login_name" placeholder="名称">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="telno" class="form-control" id="login_tel" placeholder="手机号码">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-control" id="login_pwd" placeholder="密码">
+                                                    </div>
+
+                                                    <div class="checkbox">
+                                                        <label class="red">
+                                                            <input type="checkbox">我同意海鲤网协议
+                                                        </label>
+                                                    </div>
+                                                    <button class="btn btn-lg btn-block btn_red">注册</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a type="button" class="btn header_rg_list afff adecoration" href="#" data-toggle="modal"
+                                data-target="#register">登录</a>
+                                <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <h4 class="modal-title" id="register_title">登录</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="post">
+                                                    <div class="form-group">
+                                                        <input type="telno" class="form-control" id="register_tel" placeholder="手机号码">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-control" id="register_pwd" placeholder="密码">
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label class="red">
+                                                            <input type="checkbox">自动登录
+                                                        </label>
+                                                        <a class="pull-right ared space-right-4">忘记密码?</a>
+                                                    </div>
+                                                    <button href="login.html" class="btn btn-lg btn-block btn_red">登录</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--<% include("/main/register.html"){} %>-->
+                    <div class="clearfix"></div>
+                    <!-- script-for-menu -->
+                    <script>
+                        $("span.menu").click(function () {
+                            $("ul.cl-effect-1").slideToggle(300, function () {
+                        // Animation complete.
+                    });
+                        });
+                    </script>
+                    <!-- script-for-menu -->
+                </div>
+                <div class="banner-text wow fadeInUp" data-wow-delay="0.5s">
+                    <p>享受大海</p>
+                    <h1>欢迎您 <span>租船</span> 游玩 海钓</h1>
+                </div>
+                <div class="booking-form">
+                    <!---strat-date-piker---->
+            <!-- <script>
+                     $(function() {
+                       $('#datetimepicker').datepicker();
+                     });
+                 </script>-->
+                 <!---/End-date-piker---->
+                 <div class="online_reservation">
+                    <div class="b_room">
+                        <div class="booking_room">
+                            <div class="reservation">
+                                <ul>
+                                    <li class="span1_of_1 left">
+                                        <div class="book_date">
+                                            <input type="text" class="index_search border_r" placeholder="按城市地址进行搜索" required="">
+                                        </div>
+                                    </li>
+
+                                    <li class="span1_of_2">
+                                        <div class="book_date">
+                                            <div class="controls date">
+                                                <input type="text" class="span9 index_search" value="" id="starttime"
+                                                readonly placeholder="租船日期——还船日期">
+                                                <span class="add-on">
+                                                   <i class="icon-calendar"></i> 
+                                               </span>
+                                               <script type="text/javascript">
+                                                $(document).ready(function () {
+                                                    function SetRQ() {
+                                                        var MyDate = new Date();
+                                                        //获得昨天的日期
+                                                        var yesterday_miliseconds = MyDate.getTime() - 1000 * 60 * 60 * 24;
+                                                        var Yesterday = new Date();
+                                                        Yesterday.setTime(yesterday_miliseconds);
+                                                        var yesterday_year = Yesterday.getFullYear().toString();
+                                                        var month_temp = Yesterday.getMonth() + 1;
+                                                        var yesterday_month = month_temp > 9 ? month_temp.toString() : "0" + month_temp.toString();
+                                                        var d = Yesterday.getDate() + 1;
+                                                        var Day = d > 9 ? d.toString() : "0" + d.toString();
+
+                                                        return yesterday_year + "-" + yesterday_month + "-" + Day;
+                                                    }
+
+                                                    $('#starttime').daterangepicker({minDate: SetRQ()});
+                                                });
+                                            </script>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="span1_of_3">
+                                    <div class="">
+                                        <input type="submit" class="btn btn_red index_btn" value="搜索"
+                                        onclick="showList()"/>
+                                    </div>
+                                </li>
+                                <div class="clearfix"></div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!---->
+        </div>
+        <div class="clearfix"></div>
+        <div class="online-form">
+            <a class="play-icon popup-with-zoom-anim" href="#small-dialog2">这里查找</a>
+        </div>
+        <div id="small-dialog2" class="mfp-hide">
+            <div class="signup">
+                <form>
+                    <input type="text" class="email" placeholder="选择地方" required="required"
+                    pattern="([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?"/>
+                    <input type="text" class="email" placeholder="2/05/2016" required="required"
+                    pattern="([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?"/>
+                    <input type="submit" value="立即查找"/>
+                </form>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $('.popup-with-zoom-anim').magnificPopup({
+                    type: 'inline',
+                    fixedContentPos: false,
+                    fixedBgPos: true,
+                    overflowY: 'auto',
+                    closeBtnInside: true,
+                    preloader: false,
+                    midClick: true,
+                    removalDelay: 300,
+                    mainClass: 'my-mfp-zoom-in'
+                });
+
+            });
+        </script>
+    </div>
+</div>
+<!---->
+<div id="brief" class="brief">
+    <div class="container">
+        <div class="col-md-6 brief-grids wow fadeInLeft" data-wow-delay="0.5s">
+            <a herf="#" onclick="openship()"><img src="ui/plugins/trave/images/browse.jpg" alt=""/></a>
+            <div class="brief-grid">
+                <div class="brief-grid-text">
+                    <h3>威海 刘公岛</h3>
+                    <p>刘公岛位于山东半岛最东端的威海湾内，人文景观丰富独特，既有上溯千年的战国遗址、汉代刘公刘母的美丽传说，
+                        又有清朝北洋海军提督署、水师学堂、古炮台等甲午战争遗址，还有众多英租时期遗留下来的欧式建筑，素有“东隅屏藩”和“不沉的战舰”之称。
+                        其北部海蚀崖直立陡峭，南部平缓绵延，森林覆盖率达87%，有“海上仙山”和“世外桃源”的美誉。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 brief-grids wow fadeInRight" data-wow-delay="0.5s">
+            <img src="ui/plugins/trave/images/browse2.jpg" alt=""/>
+            <div class="brief-grid">
+                <div class="brief-grid-text">
+                    <h3>威海 国际海水浴场</h3>
+                    <p>威海国际海水浴场位于山东省威海市火炬高技术产业开发区，是一个天然海水浴场，一年四季分明，冬暖夏凉，属于典型的海洋性气候。
+                        浴场东临山东大学威海校区，海岸线全长2800余米，沙滩面积30万平方米，沙质柔细，海水清澈，滩坡平缓，可同时容纳10万名游客。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!---->
+<div id="features" class="features">
+    <div class="container">
+        <div class="feature-text text-center">
+            <h3>探索 大海</h3>
+            <p>让 我们 真正 体验一下 出海的 乐趣.</p>
+        </div>
+        <div class="features-section">
+            <div class="col-md-6 feature-grid text-center">
+                <i class="f1 wow bounceIn" data-wow-delay="0.5s"></i>
+                <h3>海钓</h3>
+                <p>海钓，即依据海洋中各种鱼类生活的海域环境形态，配合其生活习性、栖移状况、季节与气候因素、觅食习性等，采取有效的方法，
+                    以钓具和饵料诱钓之。海钓是相比淡水钓鱼在水域.水深有更大选择的垂钓方式。.</p>
+                </div>
+                <div class="col-md-6 feature-grid text-center">
+                    <i class="f2 wow bounceIn" data-wow-delay="0.5s"></i>
+                    <h3>下网</h3>
+                    <p>在美丽的海洋里有着许多的鱼类，今天我们就要带上我们的渔网，一起去深海捕鱼去。
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-6 feature-grid text-center">
+                    <i class="f3 wow bounceIn" data-wow-delay="0.5s"></i>
+                    <h3>游泳</h3>
+                    <p>游泳运动是男女老幼都喜欢的体育项目之一。古代游泳，根据现有史料的考证，国内外较一致的看法是产生于居住在江、河、湖、海一带的古代人。
+                        他们为了生存，必然要在水中捕捉水鸟和鱼类作食物，通过观察和模仿鱼类、青蛙等动物在水中游动的动作，逐渐学会了游泳。</p>
+                    </div>
+                    <div class="col-md-6 feature-grid text-center">
+                        <i class="f4 wow bounceIn" data-wow-delay="0.5s"></i>
+                        <h3>摸鱼</h3>
+                        <p>出海摸鱼、打渔，享受大海的气息，体验打渔的生活！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <!---->
+        <div class="video">
+            <div class="container">
+                <div class="video-text text-center">
+                    <h3>精彩 视频</h3>
+                    <p>记忆中的海上活动，人生中美好的时光.</p>
+                </div>
+                <div class="video-grids">
+                    <div class="col-md-8 video-left">
+                        <h4>丰富多彩的海上活动，其能没有海鲤网.
+                        </h4>
+                        <h5>每一次活动，都体现了海鲤网的真实，为大家提供安全、保障、平等的一个沟通、学习、租赁的平台，
+                            海鲤网的详细介绍视频.
+                        </h5>
+                        <p>垂钓是一项高雅的休闲活动，随着人们物质生活水平的提高和生活观念的巨大变化，垂钓被越来越多的人们所喜爱，
+                            垂钓活动的开展，推动了相关产业的发展，增加了垂钓阶的交流，即有益于人们修身养性和祛病延年，还能给生活增加无穷的乐趣，
+                            垂钓是人与鱼的斗智斗勇，不但要掌握一般的钓具、钓饵、钓技，还要掌握鱼性、水性、天文和地理的基本知识，才能得到远不止鱼获的收获，
+                            朋友，扛起你的鱼杆，远离城市的浮躁，抛弃心中的烦恼，尽情享受大自然的恩赐吧。 .
+                        </p>
+                    </div>
+                    <div class="col-md-4 video-right">
+                        <img src="ui/plugins/trave/images/1.jpg" alt=""/>
+                        <a class="play-icon popup-with-zoom-anim" href="#small-dialog"><span> </span></a>
+                        <div id="small-dialog" class="mfp-hide">
+                            <iframe src="" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        </div>
+                        <link href="ui/plugins/trave/css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+                        <script src="ui/plugins/trave/js/jquery.magnific-popup.js" type="text/javascript"></script>
+                        <script>
+                            $(document).ready(function () {
+                                $('.popup-with-zoom-anim').magnificPopup({
+                                    type: 'inline',
+                                    fixedContentPos: false,
+                                    fixedBgPos: true,
+                                    overflowY: 'auto',
+                                    closeBtnInside: true,
+                                    preloader: false,
+                                    midClick: true,
+                                    removalDelay: 300,
+                                    mainClass: 'my-mfp-zoom-in'
+                                });
+                            });
+                        </script>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <div id="screenshots" class="screenshots">
+            <div class="container">
+                <div class="screen-text text-center">
+                    <h3>租船信息</h3>
+                    <p>最近发布的租船信息.</p>
+                </div>
+                <!-- requried-jsfiles-for owl -->
+                <link href="ui/plugins/trave/css/owl.carousel.css" rel="stylesheet">
+                <script src="ui/plugins/trave/js/owl.carousel.js"></script>
+                <script>
+                    $(document).ready(function () {
+                        $("#owl-demo").owlCarousel({
+                            items: 1,
+                            lazyLoad: true,
+                            autoPlay: true,
+                            navigation: false,
+                            navigationText: false,
+                            pagination: true,
+                        });
+                    });
+                </script>
+                <!-- //requried-jsfiles-for owl -->
+                <div id="owl-demo" class="owl-carousel">
+                    <div class="item text-center guide-sliders">
+                        <div class="col-md-4 image-grid">
+                            <a herf="#" onclick="openship()"><img src="ui/plugins/trave/images/sc1.jpg"></a>
+                        </div>
+                        <div class="col-md-4 image-grid">
+                            <img src="ui/plugins/trave/images/sc2.jpg">
+                        </div>
+                        <div class="col-md-4 image-grid">
+                            <img src="ui/plugins/trave/images/sc3.jpg">
+                        </div>
+                    </div>
+                    <div class="item text-center guide-sliders">
+                        <div class="col-md-4 image-grid">
+                            <img src="ui/plugins/trave/images/sc4.jpg">
+                        </div>
+                        <div class="col-md-4 image-grid">
+                            <img src="ui/plugins/trave/images/sc5.jpg">
+                        </div>
+                        <div class="col-md-4 image-grid">
+                            <img src="ui/plugins/trave/images/sc1.jpg">
+                        </div>
+                    </div>
+                    <div class="item text-center guide-sliders">
+                        <div class="col-md-4 image-grid">
+                            <img src="ui/plugins/trave/images/sc5.jpg">
+                        </div>
+                        <div class="col-md-4 image-grid">
+                            <img src="ui/plugins/trave/images/sc4.jpg">
+                        </div>
+                        <div class="col-md-4 image-grid">
+                            <img src="ui/plugins/trave/images/sc2.jpg">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!---->
+        <div id="testimonial" class="trusted">
+            <div class="container">
+                <div class="trusted-text text-center">
+                    <h3>我们的社区</h3>
+                    <p>分享我们每一个人的心得，交流我们游玩的乐趣.</p>
+                </div>
+                <div class="box-grids">
+                    <div class="col-md-4 client wow fadeInLeft" data-wow-delay="0.5s">
+                        <div class="box-grid">
+                            <span></span>
+                            <p>“钓胜于鱼”才是钓鱼的乐趣！
+                                纷繁俗事之中脱身而出，享受钓时的那份淡然、沉静，体悟弥漫自身周围的或青山，或绿水，或鸟语，或花香。
+                                当然，如果静静守候过后，能小有所获，便又多一份成就感，和回去后分享果实的喜悦！.</p>
+                                <label></label>
+                            </div>
+                            <h4><a href="#">海钓爱好者</a></h4>
+                            <p class="ceo">来自威海</p>
+                        </div>
+                        <div class="col-md-4 client wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="box-grid">
+                                <span></span>
+                                <p>“钓胜于鱼”才是钓鱼的乐趣！
+                                    于纷繁俗事之中脱身而出，享受钓时的那份淡然、沉静，体悟弥漫自身周围的或青山，或绿水，或鸟语，或花香。
+                                    当然，如果静静守候过后，能小有所获，便又多一份成就感，和回去后分享果实的喜悦！.</p>
+                                    <label></label>
+                                </div>
+                                <h4><a href="#">海钓爱好者</a></h4>
+                                <p class="ceo">来自威海</p>
+                            </div>
+                            <div class="col-md-4 client wow fadeInRight" data-wow-delay="0.5s">
+                                <div class="box-grid">
+                                    <span></span>
+                                    <p>“钓胜于鱼”才是钓鱼的乐趣！
+                                        于纷繁俗事之中脱身而出，享受钓时的那份淡然、沉静，体悟弥漫自身周围的或青山，或绿水，或鸟语，或花香。
+                                        当然，如果静静守候过后，能小有所获，便又多一份成就感，和回去后分享果实的喜悦！.</p>
+                                        <label></label>
+                                    </div>
+                                    <h4><a href="#">海钓爱好者</a></h4>
+                                    <p class="ceo">来自威海</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="get-started">
+                        <div class="container">
+                            <h4 class="wow bounceInLeft" data-wow-delay="0.5s">准备出发吧！</h4>
+                            <h3 class="wow bounceInRight" data-wow-delay="0.5s">我们 为您提供最好的 海上之旅</h3>
+                            <a href="#">开启旅程</a>
+                        </div>
+                    </div>
+                    <!---->
+                    <footer id="footer" class="footer">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3 col-lg-offset-1 col-sm-12">
+                                    <div class="ftr-logo">
+                                    <a class=" bounceIn" data-wow-delay="0.5s" href="index.html"><img src="ui/images/logo-w.png" alt=""/></a>
+                                    </div>
+                                    <p>客服电话</p>
+                                    <p>国内:400-890-0309</p>
+                                    <p>海外：+86-10-5904-5310</p>
+                                </div>
+                                <div class="col-lg-2 col-lg-offset-1 col-sm-4 col-xs-6">
+                                    <h4>公司信息</h4>
+                                    <ul>
+                                        <li><a href="#">关于</a></li>
+                                        <li><a href="#">新闻</a></li>
+                                        <li><a href="#">帮助</a></li>
+                                        <li><a href="#">政策</a></li>
+                                        <li><a href="#">条款与隐私</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-2 col-sm-4 col-xs-6">
+                                    <h4>发现</h4>
+                                    <ul>
+                                        <li><a href="#">信息与安全</a></li>
+                                        <li><a href="#">旅行基金</a></li>
+                                        <li><a href="#">礼品卡</a></li>
+                                        <li><a href="#">网站地图</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-2 col-sm-3 col-xs-6">
+                                    <h4>出租</h4>
+                                    <ul>
+                                        <li><a href="#">为什么要出租</a></li>
+                                        <li><a href="#">好客之道</a></li>
+                                        <li><a href="#">船主义务</a></li>
+                                        <li><a href="#">旅行安全</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+
+                    <div class="footer">
+                        <div class="container">
+                            <div class="copy-right bounceInUp" data-wow-delay="0.5s">
+                                <p>Copyright &#169; 2016 海鲤租船 . All Rights Reserved.</p>
+                                <p>归属 <a href=""> 海鲤租船</a></p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!---->
+                    <script type="text/javascript">
+                        $(document).ready(function () {
+        /*
+         var defaults = {
+         containerID: 'toTop', // fading element id
+         containerHoverID: 'toTopHover', // fading element hover id
+         scrollSpeed: 1200,
+         easingType: 'linear'
+         };
+         */
+         $().UItoTop({easingType: 'easeOutQuart'});
+     });
+    /**
+     *显示渔船详情
+     **/
+     function openship() {
+        window.open("shipDetail.html");
+    }
+    /**
+     *查询列表
+     **/
+     function showList() {
+        common_ajax.ajaxMainPanel("shipList.html");
+    }
+</script>
+<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!---->
+</body>
+</html>

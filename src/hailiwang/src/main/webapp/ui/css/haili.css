@@ -1,0 +1,571 @@
+ul, li {
+    list-style: outside none none;
+}
+.banner_width{
+    width:100%;
+}
+.header_boat{
+    padding:5px 10px;
+    border:2px solid #ffffff;
+}
+.reservation ul{
+    margin:0 auto;
+}
+.reservation ul li.span1_of_1{
+	width:53%;
+}
+.reservation ul li.span1_of_2{
+	width:32%;
+}
+.reservation ul li.span1_of_3{
+	margin-left:0;
+}
+.index_search{
+    width:100%;
+    height:50px;
+    padding:0 20px;
+}
+.btn_red{
+    background-color:#0199e6;
+    color:#ffffff;
+}
+.btn_red:hover,.btn_red:active,.btn_red:focus{
+    background-color: #0b84c1;
+    color:#ffffff;
+}
+.index_btn{
+    padding:12.5px;
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius:0px;
+    font-size: 16px;
+    color:#ffffff;
+}
+#footer{
+    padding-top: 50px;
+    color:#ffffff;
+    text-align:left;
+}
+#footer ul,#footer li{
+    list-style: none;
+}
+#footer h4{
+    margin-bottom:20px;
+}
+#footer li{
+    line-height: 1.5;
+}
+#footer a{
+    color:#ffffff;
+}
+/*!
+  *渔船详情页面样式
+  */
+
+  .bg{
+      background-color: #f5f5f5;
+      color: #565a5c;
+  }
+  .sborder {
+    border: 1px solid #c4c4c4;
+}
+#header{
+    height:61px;
+    line-height: 61px;
+    width:100%;
+    z-index:1000;
+}
+.head_search{
+    height:60px;
+    border:none;
+    font-size: 16px;
+    width:90%;
+}
+.header_rg_list{
+    width:100%;
+    height:100%;
+    display: block;
+    padding:0 20px;
+}
+.sborder_eee{
+    padding:5px 10px;
+    border:2px solid #c4c4c4;
+}
+.aeee{
+    color:#565a5c;
+    text-decoration: none;
+}
+.msg_content {
+    right: 230px;
+}
+.msg_content, .user_content {
+    position: absolute;
+    top: 59px;
+    width: 400px;
+    z-index: 10;
+}
+.help_content{
+    display: none;
+    position: absolute;
+    right: 110px;
+    top: 59px;
+    width: 400px;
+    z-index: 2000;
+}
+.help_search{
+   border: none;
+   padding-left: 15%;
+   width: 99%;
+
+}
+.help_search_ctorl{
+    width: 85%;
+    border:none;
+    padding:20px 0px 20px 15%;
+    font-size: 16px;
+}
+.help_list{
+    height:350px;
+    overflow-y:scroll;
+    overflow-x: hidden;
+}
+.help_title{
+    background-color: #edefed;
+    padding:2px 20px;
+}
+.help_article{
+    padding: 0 20px;
+}
+.help_article a{
+    color:#565A5C;
+    width:100%;
+    display: block;
+    border-bottom: 1px solid #c4c4c4;
+    text-decoration: none;
+
+}
+.help_article a:hover,.help_article a:focus{
+    padding:0 10px;
+    border-bottom: 1px solid #c4c4c4;
+    text-decoration: none;
+}
+.icon_article{
+    display: inline-block;
+    height: 40px;
+    vertical-align: middle;
+    width: 30px;
+    background-size: 30px 40px;
+}
+.help_icon_search{
+    position: absolute;
+    top:10px;
+    display: block;
+    left:10px;
+    width:40px;
+    height:40px;
+    background: url("../images/icon/icon_search.png") no-repeat;
+    background-size: 40px 40px;
+}
+.help_border{
+    margin:0px 20px;
+    border: 0.5px solid #c4c4c4;
+}
+.user_content{
+    right:0;
+    width:300px;
+    display: none;
+}
+.user_content a{
+    color:#707475;
+    font-weight: 100;
+    display: block;
+    border-bottom: 1px solid #F6F7F7;
+    width:88%;
+    margin-left:6%;
+}
+.user_content a:hover{
+    text-decoration: none;
+}
+.bgfff {
+    background-color: #ffffff;
+}
+
+.xx-coverimg{
+    height: 402px;
+    margin-top: -2px;
+    position: relative;
+    transition: height 0.2s ease 0s;
+    width: 100%;
+}
+/*!
+  *渔船船主介绍
+  */
+  .space-top-4 {
+    margin-top: 25px;
+}
+.sborder_bottom {
+    border-bottom: 1px solid #c4c4c4;
+}
+.usrimg {
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+}
+.usrname {
+    color: #646464;
+    margin-top: 20px;
+    text-align: center;
+    width: 100px;
+}
+.scenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.stcenter {
+    text-align: center;
+}
+.space-top-2 {
+    margin-top: 12.5px;
+}
+.cover_icon {
+    height: 40px;
+    width: 40px;
+}
+.pad-bottom-4 {
+    padding-bottom: 25px;
+}
+
+.xx-coverprice{
+    background-color: rgba(60, 63, 64, 0.9);
+    border:1px solid rgba(60, 63, 64, 0.9);
+    border-bottom:none;
+    color: #fff;
+    height: 40px;
+    margin-top: -41px;
+    padding: 6px 20px;
+    position: absolute;
+    text-transform: capitalize;
+    width: 100%;
+    left:0;
+    z-index: 1001;
+}
+.price {
+    float: left;
+    font-size: 24px;
+    line-height: 40px;
+}
+.pricepre {
+    float: right;
+    line-height: 40px;
+}
+.space-bottom-4 {
+    margin-bottom: 25px;
+}
+.data-open {
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 70%;
+}
+.date-open-input {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    height: 41px;
+    padding-left: 5%;
+    width: 95%;
+}
+.pepole {
+    float: left;
+    margin-top: 20px;
+    width: 25%;
+}
+.date-open-select {
+    border-radius: 2px;
+    height: 40px;
+    padding-left: 10px;
+    width: 100%;
+}
+.sblock {
+    display: block;
+}
+.book_btn {
+    background-color: #49af1e;
+    border: 1px solid #49af1e;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+.book_btn:hover,.book_btn:active,.book_btn:focus{
+    background-color: rgba(73, 175, 30 , 0.8);
+    border: 1px solid rgba(73, 175, 30 , 0.8);
+    color:#ffffff;
+    text-decoration: none;
+}
+.space-top-8 {
+    margin-top: 10px;
+}
+.ared {
+    color: #ff5a5f;
+}
+h3{
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.xx-content-st {
+    color: #ccc;
+    padding-bottom: 15px;
+}
+.pad-top-4 {
+    padding-top: 20px;
+}
+.space-top-4 {
+    margin-top: 20px;
+}
+.sborder_top {
+    border-top: 1px solid #c4c4c4;
+}
+.xx-pj-box {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+.photo-grid .row {
+    margin: 0 -3px 3px;
+}
+.featured-height {
+    height: 282px;
+}
+.supporting-height {
+    height: 141px;
+}
+.photo-grid-photo {
+    background-position: 50% 50%;
+    background-size: cover;
+    display: block;
+    height: 100%;
+}
+.featuredimg{
+	float: left;
+    width: 50%;
+    height: 100%;
+    padding-left: 1.5px;
+    padding-right: 1.5px;
+}
+.supportingimg{
+    padding-left: 1.5px;
+    padding-right: 1.5px;	
+    float: left;
+    width: 33.3333%;
+    height: 100%;
+}
+.plimg {
+    border-radius: 100%;
+    height: 70px;
+    width: 70px;
+}
+.plname {
+    color: #646464;
+    margin-top: 2px;
+    text-align: center;
+    width: 64px;
+}
+.space-top-2{
+	margin-top:40px;
+ -moz-border-bottom-colors: none;
+ -moz-border-left-colors: none;
+ -moz-border-right-colors: none;
+ -moz-border-top-colors: none;
+ border-color: #dce0e0 -moz-use-text-color -moz-use-text-color;
+ border-image: none;
+ border-style: solid none none;
+ border-width: 1px 0 0;
+}
+.xx-cy-name {
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+    bottom: 50px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    height: 50px;
+    left: 15px;
+    line-height: 50px;
+    position: absolute;
+    text-align: center;
+    width: 100px;
+}
+.star-top{
+	margin-top:10px;
+}
+
+
+/*!
+  *列表页面样式
+  */
+  .filters{
+    border-top:1px solid #eee;
+}
+.filters label{
+  font-family: "Hiragino Sans GB","华文细黑","STHeiti","微软雅黑","Microsoft YaHei",SimHei,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  color: #565a5c;
+  font-size:14px;
+  display: block;
+  padding-bottom: 8px;
+  padding-top: 9px;
+}
+.filters-section {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.outer-listings-container {
+    padding: 0 20px;
+}
+
+.listing-img {
+    overflow: hidden;
+}
+.panel-image {
+    position: relative;
+}
+.listing-img-price {
+    background: rgba(60, 63, 64, 0.9) none repeat scroll 0 0;
+    bottom: 50px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    height: 50px;
+    left: 0px;
+    line-height: 50px;
+    position: absolute;
+    text-align: center;
+    width: 100px;
+}
+
+.media-photo-badge {
+    display: inline-block;
+    position: relative;
+}
+.card-profile-picture {
+    height: 60px;
+    width: 60px;
+}
+.card-profile-picture-offset {
+    margin-bottom: -40px;
+    position: relative;
+    top: -60px;
+}
+
+.media-photo {
+    backface-visibility: hidden;
+    background-color: #cacccd;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    vertical-align: bottom;
+}
+.img-round, .media-round {
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+.media-photo-badge {
+    display: inline-block;
+    position: relative;
+}
+.text-normal, a.text-normal, a.text-normal:hover, a.text-normal:focus {
+    color: inherit;
+}
+.head_input{
+    padding-left: 20px;
+    border-left: 1px solid #c4c4c4;
+    display: inline-block;
+    width:30%;
+}
+.help_sou{
+    padding-left:20px;
+    width:100%;
+}
+.seaver_header{
+    height:60px;
+    border-bottom: 1px solid #c4c4c4;
+}
+.aeee{
+    color:#565a5c;
+}
+.seaver_title{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #565A5C;
+}
+.seaver_title ul{
+    margin:0 auto;
+    width:80%;
+}
+.seaver_title li{
+    width:10%;
+}
+.seaver_title a{
+    color: #cacccd;
+}
+.seaver_title li a:hover,.seaver_title a:active,.seaver_title a:focus{
+    color: #ffffff;
+    text-decoration: none;
+}
+/*20160504 xiaoxia 首页*/
+.position-logo{
+    margin-top: -20px;
+    margin-left: 20px;
+    width: 205px;
+}
+.booking_room {
+   
+}
+#starttime{
+    border-left:1px solid #eee !important; 
+}
+.border_r{
+    border-radius: 3px 0 0 3px ;
+}
+.bounceIn img {
+    width: 200px;
+}
+.cl-effect-1 li a{
+    margin-right: 25px;
+}
+.seaver_main{
+    padding-bottom:25px;
+}
+.seaver_title ul,.seaver_content1,.seaver_content2{
+    margin:0 auto;
+    width:90%;
+}
+.seaver_title li{
+    width:10%;
+}
+.seaver_title a{
+    color: #cacccd;
+}
+.seaver_title li a:hover,.seaver_title a:active,.seaver_title a:focus{
+    color: #ffffff;
+    text-decoration: none;
+}
+.seaver_content1 ul,.seaver_content2 ul{
+    margin-left:3%;
+}
+.seaver_content1>div>ul ul,.seaver_content2>div>ul ul{
+    margin-left: 5%;
+}
+.seaver_content1 h5,.seaver_content2 h5{
+    font-weight: 600;
+}
+/*0504下午*/
+.img-responsive{
+    width: 200px !important;
+}
+.header_rg_list i{
+    margin-left:5px;
+    line-height: 7px;
+}

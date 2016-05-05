@@ -1,0 +1,324 @@
+<script type="text/javascript" src="js/main/shipList.js"></script>
+<div class="bg">
+<!--top-->
+    <header id="header" class="clearfix hidden-xs bgfff">
+        <a class="sblock pull-left" href="index.html">
+            <img class="img-responsive" src="ui/images/logo.png" alt="">
+        </a>
+        <span class="help_icon_search icon_left"></span>
+        <input type="text" class="head_search" placeholder="想去哪儿?">
+        <ul class="pull-right list-unstyled list-inline">
+            <li><a class="header_rg_list aeee adecoration" href="botaer.html"><span class="sborder_eee">成为船长</span></a></li>
+            <li>
+                <a id="msg_btn" class="header_rg_list aeee adecoration" href="#">
+                    消息
+                    <img class="header_icon icon_msg" src="img/message1.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a id="help_btn" class="header_rg_list aeee adecoration" href="#" data-toggle="modal" data-target="#login">帮助
+                    <img class="header_icon icon_help" src="img/help1.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a id="user_btn" type="button" class=" header_rg_list aeee adecoration" href="#" data-toggle="modal"
+                   data-target="#register">
+                    用户
+                    <img class="header_icon icon_user" src="img/user1.png" alt="">
+                </a>
+
+            </li>
+        </ul>
+        <div class="msg_content bgfff sborder">
+            <ul class="list-unstyled">
+                <li class="inform">
+                    <span>通知(0)</span>
+                    <a href="travel.html" class="pull-right aeee">查看您的旅程</a>
+                </li>
+            </ul>
+        </div>
+        <div class="help_content bgfff sborder">
+            <span class="help_icon_search"></span>
+            <input id="help_search" class="search help_search" type="text" placeholder="想去哪里?">
+            <ul class="help_list list-unstyled">
+                <li class="help_title">推荐的文章</li>
+                <li class="help_article">
+                    <a href="#">
+                        <i class="icon_article"></i>
+                        入门指南
+                    </a>
+                    <hr class="help_border">
+                </li>
+                <li class="help_article">
+                    <a href="#">
+                        <i class="icon_article"></i>
+                        入门指南
+                    </a>
+                    <hr class="help_border">
+                </li>
+                <li class="help_article">
+                    <a href="#">
+                        <i class="icon_article"></i>
+                        入门指南
+                    </a>
+                    <hr class="help_border">
+                </li>
+                <li class="help_article">
+                    <a href="#">
+                        <i class="icon_article"></i>
+                        入门指南
+                    </a>
+                    <hr class="help_border">
+                </li>
+                <li class="help_article">
+                    <a href="#">
+                        <i class="icon_article"></i>
+                        入门指南
+                    </a>
+                    <hr class="help_border">
+                </li>
+                <li class="help_article">
+                    <a href="#">
+                        <i class="icon_article"></i>
+                        入门指南
+                    </a>
+                    <hr class="help_border">
+                </li>
+                <li class="help_article">
+                    <a href="#">
+                        <i class="icon_article"></i>
+                        入门指南
+                    </a>
+                    <hr class="help_border">
+                </li>
+                <li class="help_article">
+                    <a href="#">
+                        <i class="icon_article"></i>
+                        入门指南
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="user_content bgfff sborder">
+            <ul class="list-unstyled">
+                <li>
+                    <a href="travel.html">您的旅程</a>
+                </li>
+                <li>
+                    <a href="user_msg.html">编辑个人资料</a>
+                </li>
+                <li>
+                    <a href="WEB-INF/view/main/index.html">退出</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+ <div class="filters ">
+ <div class="filters-section intro-filter panel-body panel-light">
+    <div class="row">
+      <div class="col-lg-2 col-md-12 text-center-sm text-center-md row-space-sm-1 filter-label">
+        <label>日期</label>
+      </div>
+        <div class="col-lg-9">
+          <div class="col-md-4 col-sm-6 row-space-1-sm">
+				 <div class="controls date" id="datetimepicker"  data-date="2016-05-15"  data-date-format="yyyy-mm-dd" >
+				   <input type="text" class="span9 "  style="height:40px;width:100%;" value=""  id="starttime" readonly>  
+				        <span class="add-on">
+				         <i class="icon-calendar"></i> 
+				        </span>
+				</div> 
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="select select-block">
+              <select data-prefill="0" id="guest-select" class="guest-select" name="guests"  style="float:left;">
+                <option value="1">1位房客</option>
+				<option value="2">2位房客</option>
+				<option value="3">3位房客</option>
+				<option value="4">4位房客</option>
+				<option value="5">5位房客</option>
+				<option value="6">6位房客</option>
+				<option value="7">7位房客</option>
+				<option value="8">8位房客</option>
+				<option value="9">9位房客</option>
+				<option value="10">10位房客</option>
+				<option value="11">11位房客</option>
+				<option value="12">12位房客</option>
+				<option value="13">13位房客</option>
+				<option value="14">14位房客</option>
+				<option value="15">15位房客</option>
+				<option value="16">16+位房客</option>
+              </select>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+ <div class="filters-section intro-filter panel-body panel-light">
+    <div class="row">
+      <div class="col-lg-2 col-md-12 text-center-sm text-center-md row-space-sm-1 filter-label">
+        <label>船源类型</label>
+      </div>
+      <div class="col-lg-9">
+          <div class="col-md-4 col-sm-6">
+                <input type="checkbox" class="room-type__input hide-md hide-sm" value="Entire home/apt" name="room-type">小渔船（3－5人）
+          </div>
+          <div class="col-md-4 col-sm-6">
+                <input type="checkbox" class="room-type__input hide-md hide-sm" value="Entire home/apt" name="room-type">中渔船（5－8人）
+          </div>
+          <div class="col-md-4 col-sm-6">
+                <input type="checkbox" class="room-type__input hide-md hide-sm" value="Entire home/apt" name="room-type">大渔船（10－15人）
+          </div>                    
+      </div>   
+    </div>
+  </div> 
+<div class="filters-section intro-filter panel-body panel-light">
+    <div class="row">
+      <div class="col-lg-2 col-md-12 text-center-sm text-center-md row-space-sm-1 filter-label">
+        <label>价格范围</label>
+      </div>
+      <div class="col-lg-9">
+            <b>$10</b> 
+            <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="100" data-slider-max="1000" data-slider-step="1" data-slider-value="150" style="width:60%;"/>
+            <b>$1000</b>       
+      </div>   
+    </div>
+  </div>       
+ </div>
+ <hr>
+ <!-- 查询结果 -->
+ <div class="search-results">
+   <div class="outer-listings-container row-space-2">
+       <div class="row">
+           <div class="col-sm-12 row-space-2 col-md-6">
+              <div class="listing">
+                  <div class="panel-image listing-img">
+                      <a href="#">
+                        <img alt="" src="upload/ship/ship1/img1.jpg" style="width:100%;">
+                      </a>
+                      <div class="listing-img-price"> ¥300/天</div>
+                  </div>
+                  <div class="panel-body panel-card-section">
+                	<div class="">
+		                    <a class="media-photo-badge pull-right card-profile-picture card-profile-picture-offset" href="/users/show/65431263">
+		                      <div class="media-photo media-round">
+		                        <img alt="来自信義區的Min-Hsuan" src="https://z0.muscache.com/ac/pictures/8f31e051-b130-40df-a9de-56fe2504b23c.jpg?interpolation=lanczos-none&amp;crop=w:w;*,*&amp;crop=h:h;*,*&amp;resize=68:*&amp;output-format=jpg&amp;output-quality=70">
+		                      </div>
+		                    </a>
+		                  <h3 class="h5 listing-name text-truncate row-space-top-1">
+		                    <a class="text-normal" target="listing_12212055" href="#">
+		                      4Kumiko's House ＊Taipei 101 ＊市政府捷運站
+		                    </a>
+		                  </h3>
+		                  <div class="text-muted listing-location text-truncate" itemprop="description">
+		                    <span>
+						        <a class="text-normal link-reset" target="listing_12212055" href="#">
+						        整套房子/公寓 ·        ·8条评价
+						      </a>
+						    </span>
+		                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+            <div class="col-sm-12 row-space-2 col-md-6">
+	           <div class="listing">
+	                  <div class="panel-image listing-img">
+	                      <a href="#">
+	                        <img alt="" src="upload/ship/ship1/img1.jpg" style="width:100%;">
+	                      </a>
+	                      <div class="listing-img-price"> ¥300/天</div>
+	                  </div>
+	                  <div class="panel-body panel-card-section">
+	                	<div class="">
+			                    <a class="media-photo-badge pull-right card-profile-picture card-profile-picture-offset" href="/users/show/65431263">
+			                      <div class="media-photo media-round">
+			                        <img alt="来自信義區的Min-Hsuan" src="https://z0.muscache.com/ac/pictures/8f31e051-b130-40df-a9de-56fe2504b23c.jpg?interpolation=lanczos-none&amp;crop=w:w;*,*&amp;crop=h:h;*,*&amp;resize=68:*&amp;output-format=jpg&amp;output-quality=70">
+			                      </div>
+			                    </a>
+			                  <h3 class="h5 listing-name text-truncate row-space-top-1">
+			                    <a class="text-normal" target="listing_12212055" href="#">
+			                      4Kumiko's House ＊Taipei 101 ＊市政府捷運站
+			                    </a>
+			                  </h3>
+			                  <div class="text-muted listing-location text-truncate" itemprop="description">
+			                    <span>
+							        <a class="text-normal link-reset" target="listing_12212055" href="#">
+							        整套房子/公寓 ·        ·8条评价
+							      </a>
+							    </span>
+			                  </div>
+	                </div>
+	              </div>
+	            </div>
+           </div>
+       </div>
+       
+     <div class="row">
+           <div class="col-sm-12 row-space-2 col-md-6">
+              <div class="listing">
+                  <div class="panel-image listing-img">
+                      <a href="#">
+                        <img alt="" src="upload/ship/ship1/img1.jpg" style="width:100%;">
+                      </a>
+                      <div class="listing-img-price"> ¥300/天</div>
+                  </div>
+                  <div class="panel-body panel-card-section">
+                	<div class="">
+		                    <a class="media-photo-badge pull-right card-profile-picture card-profile-picture-offset" href="/users/show/65431263">
+		                      <div class="media-photo media-round">
+		                        <img alt="来自信義區的Min-Hsuan" src="https://z0.muscache.com/ac/pictures/8f31e051-b130-40df-a9de-56fe2504b23c.jpg?interpolation=lanczos-none&amp;crop=w:w;*,*&amp;crop=h:h;*,*&amp;resize=68:*&amp;output-format=jpg&amp;output-quality=70">
+		                      </div>
+		                    </a>
+		                  <h3 class="h5 listing-name text-truncate row-space-top-1">
+		                    <a class="text-normal" target="listing_12212055" href="#">
+		                      4Kumiko's House ＊Taipei 101 ＊市政府捷運站
+		                    </a>
+		                  </h3>
+		                  <div class="text-muted listing-location text-truncate" itemprop="description">
+		                    <span>
+						        <a class="text-normal link-reset" target="listing_12212055" href="#">
+						        整套房子/公寓 ·        ·8条评价
+						      </a>
+						    </span>
+		                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+            <div class="col-sm-12 row-space-2 col-md-6">
+	           <div class="listing">
+	                  <div class="panel-image listing-img">
+	                      <a href="#">
+	                        <img alt="" src="upload/ship/ship1/img1.jpg" style="width:100%;">
+	                      </a>
+	                      <div class="listing-img-price"> ¥300/天</div>
+	                  </div>
+	                  <div class="panel-body panel-card-section">
+	                	<div class="">
+			                    <a class="media-photo-badge pull-right card-profile-picture card-profile-picture-offset" href="/users/show/65431263">
+			                      <div class="media-photo media-round">
+			                        <img alt="来自信義區的Min-Hsuan" src="https://z0.muscache.com/ac/pictures/8f31e051-b130-40df-a9de-56fe2504b23c.jpg?interpolation=lanczos-none&amp;crop=w:w;*,*&amp;crop=h:h;*,*&amp;resize=68:*&amp;output-format=jpg&amp;output-quality=70">
+			                      </div>
+			                    </a>
+			                  <h3 class="h5 listing-name text-truncate row-space-top-1">
+			                    <a class="text-normal" target="listing_12212055" href="#">
+			                      4Kumiko's House ＊Taipei 101 ＊市政府捷運站
+			                    </a>
+			                  </h3>
+			                  <div class="text-muted listing-location text-truncate" itemprop="description">
+			                    <span>
+							        <a class="text-normal link-reset" target="listing_12212055" href="#">
+							        整套房子/公寓 ·        ·8条评价
+							      </a>
+							    </span>
+			                  </div>
+	                </div>
+	              </div>
+	            </div>
+           </div>
+       </div>
+
+
+   </div>
+ </div>
+ </div>
